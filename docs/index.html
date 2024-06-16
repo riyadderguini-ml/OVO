@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+
+    <title>Riyad's Website</title>
+    
+    <link rel="icon" href="pxfuel-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="pxfuel-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="pxfuel-48x48.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="pxfuel-64x64.png" sizes="64x64" type="image/png">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/templatemo-style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        #logo {
+            display: inline-block;
+            padding: 20px;
+            background-image: url('xxxx.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+        }
+        #myVideo, #tempVideo {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+        #tempVideo {
+            display: none;
+        }
+
+        video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+/* Optional: ensure the video does not overflow its container */
+#myVideo, #tempVideo {
+    max-width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+    </style>
+        
+
+
+</head>
+
+<body>
+
+
+
+<div id="video">
+    <div class="preloader">
+        <div class="preloader-bounce">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="container-fluid">
+            <div class="navbar">
+                <a href="javascript:void(0);" id="logo" title="Riyad DERGUINI" onclick="playTempVideo();">
+                    ⵕⵉⴰⴷ ⴷⴻⵔⴳⵉⵏⵉ
+                </a>
+                <div class="navigation-row">
+                    <nav id="navigation">
+                        <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
+                        <div class="nav-box navbar-collapse">
+                            <ul class="navigation-menu nav navbar-nav navbars" id="nav">
+                                <li data-menuanchor="slide01" class="active"><a href="#slide01">Home</a></li>
+                                <li data-menuanchor="slide02"><a href="#slide02">About Me</a></li>
+                                <li data-menuanchor="slide03"><a href="#slide03">My Skills</a></li>
+                                <li data-menuanchor="slide04"><a href="#slide04">Contact Me</a></li>
+                                <li><a href="https://drive.google.com/drive/folders/1i7G0_SJBWkFcKk3px3Mx3ULqI_y_VRUC?usp=drive_link" target="_blank">Ressources</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<video autoplay muted loop id="myVideo">
+    <source src="images/video-bg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<video id="tempVideo" onended="switchBackToMainVideo()">
+    <source src="khabibs.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+
+    <div id="fullpage" class="fullpage-default">
+
+        <div class="section animated-row" data-section="slide01">
+            <div class="section-inner">
+                <div class="welcome-box">
+                    <span class="welcome-first animate" data-animate="fadeInUp">Hello, welcome to</span>
+                    <h1 class="welcome-title animate" data-animate="fadeInUp">My website</h1>
+                    <p class="animate" data-animate="fadeInUp"></p>
+                    <div class="scroll-down next-section animate data-animate=" fadeInUp""><img
+                            src="images/mouse-scroll.png" alt=""><span>Scroll Down</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section animated-row" data-section="slide02">
+            <div class="section-inner">
+                <div class="about-section">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 wide-col-laptop">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="about-contentbox">
+                                        <div class="animate" data-animate="fadeInUp">
+                                            <span>About Me</span>
+                                            <h2>Who am i?</h2>
+                                            <p>Hi, I'm Riyad DERGUINI, a Bachelor's student at the Galilee
+                                                Institute of the University of Paris 13, where I major in
+                                                Mathematics and Computer Science. With a strong passion for solving
+                                                complex problems and a knack for logical thinking.
+
+                                                In my free time, I practice athletics, which keeps me disciplined
+                                                and focused. Music is another significant part of my life. I enjoy
+                                                listening to artists like Dean Lewis and Jonah Kagen, whose songs
+                                                inspire and relax me.</p>
+                                        </div>
+                                        <div class="facts-list owl-carousel">
+                                            <div class="item animate" data-animate="fadeInUp">
+                                                <div class="counter-box">
+                                                    <i class="fa fa-trophy counter-icon"
+                                                        aria-hidden="true"></i><span class="count-number">5</span>
+                                                    Awards Won
+                                                </div>
+                                            </div>
+                                            <div class="item animate" data-animate="fadeInUp">
+                                                <div class="counter-box">
+                                                    <i class="fa fa-graduation-cap counter-icon"
+                                                        aria-hidden="true"></i><span class="count-number">1</span>
+                                                    Degrees
+                                                </div>
+                                            </div>
+                                           
+                                            <div class="item animate" data-animate="fadeInUp">
+                                                <div class="counter-box">
+                                                    <i class="fa fa-certificate counter-icon"
+                                                        aria-hidden="true"></i><span class="count-number">2</span>
+                                                    Certificates
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <figure class="about-img animate" data-animate="fadeInUp"><img
+                                            src="images/the-man.jpg" class="rounded" alt=""></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="section animated-row" data-section="slide03">
+            <div class="section-inner">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 wide-col-laptop">
+                        <div class="title-block animate" data-animate="fadeInUp">
+                            <span>My Skills</span>
+                            <h2>What i’m good at?</h2>
+                        </div>
+                        <div class="skills-row animate" data-animate="fadeInDown">
+                            <div class="row">
+                                <div class="col-md-8 offset-md-2">
+                                    <div class="skill-item">
+                                        <h6>English</h6>
+                                        <div class="skill-bar">
+                                            <span>88%</span>
+                                            <div class="filled-bar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <h6>French</h6>
+                                        <div class="skill-bar">
+                                            <span>90%</span>
+                                            <div class="filled-bar-2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <h6>Time Managgement</h6>
+                                        <div class="skill-bar">
+                                            <span>85%</span>
+                                            <div class="filled-bar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item last-skill">
+                                        <h6>Leadership</h6>
+                                        <div class="skill-bar">
+                                            <span>90%</span>
+                                            <div class="filled-bar-2"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-item last-skill">
+                                        <h6>Team work</h6>
+                                        <div class="skill-bar">
+                                            <span>84%</span>
+                                            <div class="filled-bar-2"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-item last-skill">
+                                        <h6>Communication</h6>
+                                        <div class="skill-bar">
+                                            <span>87%</span>
+                                            <div class="filled-bar-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+        <div class="section animated-row" data-section="slide04">
+            <div class="section-inner">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 wide-col-laptop">
+                        <div class="title-block animate" data-animate="fadeInUp">
+                            <span>Contact</span>
+                            <h2>Get In Touch!</h2>
+                        </div>
+                        <div class="contact-section">
+                            <div class="row">
+                                <div class="col-md-6 animate" data-animate="fadeInUp">
+                                    <div class="contact-box">
+                                        <div class="contact-row">
+                                            <i class="fa fa-map-marker"></i> Île-de-France
+                                        </div>
+                                        <div class="contact-row">
+                                            <i class="fa fa-phone"></i> (+33) 7 50 00 70 90
+                                        </div>
+                                        <div class="contact-row">
+                                            <i class="fa fa-envelope"></i> riyadderguini.jobs@proton.me
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 animate" data-animate="fadeInUp">
+                                    <form id="ajax-contact" method="post" action="#">
+                                        <div class="input-field">
+                                            <input type="text" class="form-control" name="name" id="name" required
+                                                placeholder="Name">
+                                        </div>
+                                        <div class="input-field">
+                                            <input type="email" class="form-control" name="email" id="email"
+                                                required placeholder="Email">
+                                        </div>
+                                        <div class="input-field">
+                                            <textarea class="form-control" name="message" id="message" required
+                                                placeholder="Message"></textarea>
+                                        </div>
+                                        <button class="btn" type="submit">Submit</button>
+                                    </form>
+                                    <div id="form-messages" class="mt-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="social-icons">
+        <div class="text-right">
+            <ul class="social-icons">
+                
+                <li><a href="https://x.com/RiyadDerguini" title="X"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="27" height="27" viewBox="0 0 50 50">
+<path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path>
+</svg></a></li>
+                <li><a href="https://www.linkedin.com/riyadderguini" title="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="27" height="27" viewBox="0 0 48 48">
+<path fill="#0078d4" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z"></path><path d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364	c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274	L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479	C18,16.523,16.521,18,14.485,18H18v19H11z" opacity=".05"></path><path d="M30.5,36.5v-9.599c0-1.973-1.031-3.198-2.692-3.198c-1.295,0-1.935,0.912-2.243,1.677	c-0.082,0.199-0.071,0.989-0.067,1.326L25.5,36.5h-6v-18h6v1.638c0.795-0.823,2.075-1.638,4.238-1.638	c4.233,0,6.761,2.906,6.761,7.774L36.5,36.5H30.5z M11.5,36.5v-18h6v18H11.5z M14.457,17.5c-1.713,0-2.957-1.262-2.957-3.001	c0-1.738,1.268-2.999,3.014-2.999c1.724,0,2.951,1.229,2.986,2.989c0,1.749-1.268,3.011-3.015,3.011H14.457z" opacity=".07"></path><path fill="#fff" d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12	c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698	c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19	c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z"></path>
+</svg></a></li>
+                <li><a href="https://t.me/+EuZ6_qa0Ams2NzY0" title="Telegram">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="27" height="27" viewBox="0 0 64 64">
+<linearGradient id="EEzBmxT86u8E~6vCqQtLma_114954_gr1" x1="29.5" x2="29.5" y1="19.006" y2="46" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#6dc7ff"></stop><stop offset="1" stop-color="#e6abff"></stop></linearGradient><path fill="url(#EEzBmxT86u8E~6vCqQtLma_114954_gr1)" d="M22.007,35.25L39.022,25L27.011,37.5l10.535,8.275c1.887,0.83,2.574-0.899,2.574-0.899 l4.825-24.501c0,0,0.082-0.625,0.045-0.75c-0.344-1.168-2.228-0.325-2.227-0.324L15.206,30.188c0,0-1.304,0.449-1.201,1.278 c0.103,0.83,1.167,1.209,1.167,1.209l6.837,2.575"></path><linearGradient id="EEzBmxT86u8E~6vCqQtLmb_114954_gr2" x1="29.5" x2="29.5" y1="5.833" y2="58.262" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"></stop><stop offset="1" stop-color="#c822ff"></stop></linearGradient><path fill="url(#EEzBmxT86u8E~6vCqQtLmb_114954_gr2)" d="M45.949,19.343c-0.23-0.784-0.859-1.269-1.727-1.33c-0.175-0.013-1.159,0.027-1.823,0.365 l-0.003-0.007L14.881,29.243C13.996,29.547,13.02,30.266,13,31.33c-0.002,0.084,0.003,0.171,0.014,0.26 c0.173,1.4,1.654,1.968,1.807,2.021l6.377,2.402c0.49,1.575,2.108,6.774,2.456,7.886c0.234,0.744,0.62,1.709,1.327,1.973 C25.185,45.956,25.402,46,25.628,46c0.614,0,1.014-0.312,1.163-0.447l3.903-3.89l6.235,4.897c0.065,0.052,0.138,0.096,0.215,0.129 c0.517,0.228,0.976,0.31,1.367,0.31c0.409,0,0.745-0.089,0.998-0.193c1.067-0.438,1.494-1.447,1.54-1.561 c0.022-0.057,0.04-0.116,0.052-0.176l4.835-24.564C46.047,19.669,45.987,19.472,45.949,19.343z M23.195,35.701l9.872-5.947 l-6.775,7.053c-0.12,0.124-0.188,0.279-0.229,0.442c-0.003,0.012-1.006,4.43-1.006,4.43L23.195,35.701z M43.963,20.188l-4.799,24.37 c-0.057,0.098-0.2,0.311-0.413,0.398c-0.179,0.073-0.412,0.055-0.694-0.053l-9.559-7.507l11.245-11.704 c0.348-0.361,0.374-0.925,0.061-1.316c-0.312-0.391-0.867-0.491-1.297-0.232l-16.601,10l-6.389-2.406 c-0.196-0.075-0.398-0.221-0.481-0.323c0.109-0.096,0.329-0.221,0.537-0.296L43.131,20.23c0.017-0.006,0.033-0.014,0.05-0.021 c0.251-0.11,0.59-0.192,0.803-0.205C43.974,20.104,43.963,20.187,43.963,20.188z"></path><linearGradient id="EEzBmxT86u8E~6vCqQtLmc_114954_gr3" x1="32" x2="32" y1="5.833" y2="58.262" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"></stop><stop offset="1" stop-color="#c822ff"></stop></linearGradient><path fill="url(#EEzBmxT86u8E~6vCqQtLmc_114954_gr3)" d="M32,58C17.663,58,6,46.336,6,32S17.663,6,32,6s26,11.664,26,26S46.337,58,32,58z M32,8 C18.767,8,8,18.767,8,32s10.767,24,24,24s24-10.767,24-24S45.233,8,32,8z"></path>
+</svg>
+            </a></li>
+                <li><a href="https://www.instagram.com/igderiyad" title="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="27" height="27" viewBox="0 0 48 48">
+<radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"></stop><stop offset=".328" stop-color="#ff543f"></stop><stop offset=".348" stop-color="#fc5245"></stop><stop offset=".504" stop-color="#e64771"></stop><stop offset=".643" stop-color="#d53e91"></stop><stop offset=".761" stop-color="#cc39a4"></stop><stop offset=".841" stop-color="#c837ab"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"></stop><stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"></path><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"></path>
+</svg>
+            </a></li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+    <audio id="background-music" src="mix_4m51s (audio-joiner.com).mp3"></audio>
+
+<script src="js/jquery.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/fullpage.min.js"></script>
+
+<script src="js/scrolloverflow.js"></script>
+
+<script src="js/owl.carousel.min.js"></script>
+
+<script src="js/jquery.inview.min.js"></script>
+
+<script src="js/form.js"></script>
+
+<script src="js/custom.js"></script>
+
+<script>
+    function playMusic() {
+        var audio = document.getElementById('background-music');
+        audio.play();
+    }
+</script>
+
+<script>
+    function playTempVideo() {
+        var mainVideo = document.getElementById('myVideo');
+        var tempVideo = document.getElementById('tempVideo');
+
+        mainVideo.style.display = 'none';
+        tempVideo.style.display = 'block';
+        tempVideo.play();
+    }
+
+    function switchBackToMainVideo() {
+        var mainVideo = document.getElementById('myVideo');
+        var tempVideo = document.getElementById('tempVideo');
+
+        tempVideo.style.display = 'none';
+        mainVideo.style.display = 'block';
+        mainVideo.play();
+    }
+
+    function switchBackToMainVideo() {
+    var mainVideo = document.getElementById('myVideo');
+    var tempVideo = document.getElementById('tempVideo');
+
+    // Hide tempVideo and show mainVideo
+    tempVideo.style.display = 'none';
+    mainVideo.style.display = 'block';
+
+    // Play mainVideo
+    mainVideo.play();
+}
+
+function playTempVideo() {
+    var mainVideo = document.getElementById('myVideo');
+    var tempVideo = document.getElementById('tempVideo');
+
+    // Hide mainVideo and show tempVideo
+    mainVideo.style.display = 'none';
+    tempVideo.style.display = 'block';
+
+    // Play tempVideo
+    tempVideo.play();
+}
+
+
+
+</script>
+
+</body>
+
+</html>
